@@ -6,8 +6,6 @@ class Bearing
     { label: 'W', x: -1, y: 0 }
   ].freeze
 
-  # attr_accessor :bearing
-
   def initialize(label)
     @current = BEARINGS.find { |i| i.fetch(:label) == label }
 
