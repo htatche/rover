@@ -1,4 +1,4 @@
-require_relative '../console.rb'
+require_relative '../console'
 
 RSpec.describe Console do
   subject { described_class.new }
@@ -12,6 +12,7 @@ RSpec.describe Console do
       input.puts 'LMLMLMLMM'
       input.puts '3 3 E'
       input.puts 'MMRMMRMRRM'
+      input.puts 'END'
       input.rewind
 
       $stdin = input
