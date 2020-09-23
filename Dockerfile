@@ -9,4 +9,4 @@ RUN bundle install
 
 COPY . .
 
-ENTRYPOINT ["echo", "Welcome to Mars, fellow spacetraveller!"]
+CMD ["./main.rb"]
